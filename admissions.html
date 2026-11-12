@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for admission at Siqarah Public Model High School, Shorkot.">
+  <title>Admissions | Siqarah Public Model High School</title>
+  <style>
+    :root{
+      --navy:#10264b;--blue:#1e5eff;--sky:#eaf4ff;--teal:#11a7a0;
+      --ink:#17243b;--muted:#64748b;--white:#fff;--line:#dce6f2;
+      --shadow:0 20px 55px rgba(20,49,93,.13);--radius:22px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#f5f9ff;line-height:1.6}
+    a{color:inherit}
+    .ambient{position:fixed;inset:0;z-index:-2;overflow:hidden;background:linear-gradient(135deg,#f5f9ff,#e8f7ff 45%,#f3f1ff)}
+    .orb{position:absolute;width:360px;height:360px;border-radius:50%;filter:blur(2px);opacity:.35;animation:float 13s ease-in-out infinite alternate}
+    .orb.one{background:#87c8ff;top:-100px;left:-100px}
+    .orb.two{background:#87ead7;right:-120px;top:35%;animation-delay:-4s}
+    .orb.three{background:#c8b8ff;bottom:-160px;left:35%;animation-delay:-7s}
+    @keyframes float{from{transform:translate(0,0) scale(1)}to{transform:translate(55px,35px) scale(1.13)}}
+    @keyframes slideUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes shimmer{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+    .topbar{background:var(--navy);color:#e9f2ff;padding:9px 5%;font-size:13px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .topbar a{text-decoration:none;color:#fff}
+    header{padding:17px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px;background:rgba(255,255,255,.78);backdrop-filter:blur(14px);border-bottom:1px solid rgba(220,230,242,.8);position:sticky;top:0;z-index:10}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+    .brand-mark{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,var(--blue),var(--teal));color:#fff;display:grid;place-items:center;font-weight:900;font-size:17px;box-shadow:0 8px 20px #1e5eff33;flex-shrink:0}
+    .brand-name{font-size:15px;font-weight:850;line-height:1.2;color:var(--navy)}
+    .brand-sub{font-size:11px;color:var(--muted);margin-top:4px}
+    nav{display:flex;align-items:center;gap:22px}
+    nav a{text-decoration:none;font-size:13px;font-weight:750;color:#43516a;transition:.2s}
+    nav a:hover,nav a.active{color:var(--blue)}
+    .nav-cta{background:var(--blue);color:#fff!important;padding:10px 16px;border-radius:12px}
+    .hero{max-width:1180px;margin:auto;padding:62px 22px 36px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px;animation:slideUp .7s ease both}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #cfe0ff;background:#ffffffbd;color:#2156c7;border-radius:999px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:.04em}
+    .eyebrow:before{content:"";width:7px;height:7px;background:var(--teal);border-radius:50%;box-shadow:0 0 0 4px #11a7a01c}
+    h1{font-size:clamp(36px,5vw,60px);line-height:1.06;letter-spacing:-.045em;margin:19px 0;color:var(--navy)}
+    h1 span{background:linear-gradient(90deg,var(--blue),var(--teal),#7a63e8,var(--blue));background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 7s linear infinite}
+    .hero p{max-width:560px;color:#5c6b82;font-size:16px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;border:0;border-radius:13px;padding:13px 18px;font-weight:800;font-size:14px;cursor:pointer;transition:transform .2s,box-shadow .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{color:#fff;background:linear-gradient(120deg,var(--blue),#497cff);box-shadow:0 12px 25px #1e5eff2c}
+    .btn-light{background:#fff;border:1px solid var(--line);color:var(--navy)}
+    .hero-visual{position:relative;min-height:350px;border-radius:30px;padding:28px;overflow:hidden;background:linear-gradient(145deg,#163a72,#2676b9 60%,#14a9a1);box-shadow:var(--shadow);color:#fff;display:flex;align-items:flex-end}
+    .hero-visual:before,.hero-visual:after{content:"";position:absolute;border:1px solid #ffffff35;border-radius:50%}
+    .hero-visual:before{width:320px;height:320px;right:-70px;top:-110px}
+    .hero-visual:after{width:220px;height:220px;right:-20px;top:-60px}
+    .visual-content{position:relative;z-index:1;max-width:390px}
+    .visual-icon{width:68px;height:68px;border-radius:22px;background:#ffffff22;border:1px solid #ffffff55;display:grid;place-items:center;font-size:32px;margin-bottom:22px}
+    .hero-visual h2{font-size:30px;line-height:1.15;margin:0 0 10px}
+    .hero-visual p{color:#e5f2ff;font-size:14px;margin:0}
+    .float-card{position:absolute;top:26px;left:24px;background:#fff;color:var(--navy);border-radius:15px;padding:12px 15px;box-shadow:0 12px 25px #09234c33;font-size:12px;font-weight:800}
+    .float-card strong{display:block;font-size:18px;color:var(--blue)}
+    .stats{max-width:1120px;margin:0 auto 45px;padding:0 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .stat{background:#ffffffc9;border:1px solid #e0eafa;border-radius:17px;padding:17px 20px;display:flex;align-items:center;gap:13px;box-shadow:0 7px 25px #14315d08}
+    .stat-icon{width:43px;height:43px;border-radius:13px;display:grid;place-items:center;background:#e8f1ff;font-size:20px}
+    .stat strong{display:block;color:var(--navy);font-size:14px}
+    .stat small{color:var(--muted);font-size:12px}
+    .form-section{max-width:1060px;margin:0 auto 75px;padding:0 22px;scroll-margin-top:100px}
+    .section-heading{text-align:center;margin-bottom:28px}
+    .section-heading .mini{font-size:12px;text-transform:uppercase;letter-spacing:.15em;color:var(--blue);font-weight:900}
+    .section-heading h2{font-size:clamp(27px,4vw,39px);letter-spacing:-.035em;color:var(--navy);margin:7px 0}
+    .section-heading p{color:var(--muted);margin:0}
+    .form-card{background:#fff;border:1px solid #e1eaf5;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+    .form-banner{padding:22px 28px;background:linear-gradient(110deg,#edf5ff,#eafffb);border-bottom:1px solid #deebf5;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+    .form-banner h3{margin:0;color:var(--navy);font-size:19px}
+    .form-banner p{margin:3px 0 0;color:var(--muted);font-size:13px}
+    .required-note{font-size:12px;color:#68758a}
+    form{padding:28px}
+    fieldset{border:0;padding:0;margin:0 0 28px}
+    legend{font-size:15px;font-weight:900;color:var(--navy);margin-bottom:17px;padding:0;display:flex;align-items:center;gap:10px}
+    legend span{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#eaf1ff;color:var(--blue);font-size:13px}
+    .fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 20px}
+    .field.full{grid-column:1/-1}
+    label{display:block;font-size:12px;font-weight:800;color:#43516a;margin-bottom:7px}
+    label .req{color:#e04f5f}
+    input,select,textarea{width:100%;border:1px solid #d7e2ef;border-radius:11px;background:#fbfdff;padding:12px 13px;font:inherit;font-size:14px;color:var(--ink);outline:none;transition:border .2s,box-shadow .2s}
+    input,select{min-height:47px}
+    textarea{min-height:95px;resize:vertical}
+    input:focus,select:focus,textarea:focus{border-color:#6e96ff;box-shadow:0 0 0 4px #1e5eff12;background:#fff}
+    input::placeholder,textarea::placeholder{color:#9aa8ba}
+    .hint{font-size:11px;color:#8190a5;margin-top:5px}
+    .consent{display:flex;align-items:flex-start;gap:10px;color:#56657a;font-size:12px;margin:4px 0 20px}
+    .consent input{width:16px;min-height:16px;margin-top:3px;flex-shrink:0}
+    .form-actions{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap;border-top:1px solid #edf1f6;padding-top:22px}
+    .form-actions small{max-width:440px;color:#78869a;font-size:11px}
+    .submit-btn{min-width:210px}
+    .status{display:none;margin-top:18px;padding:13px 15px;border-radius:12px;font-size:13px}
+    .status.show{display:block}
+    .status.info{background:#fff7e6;color:#865b00;border:1px solid #f2dda9}
+    .status.success{background:#eafaf2;color:#176b42;border:1px solid #bcebd1}
+    .status.error{background:#fff0f0;color:#9d2d37;border:1px solid #f2c4c8}
+    .contact-strip{max-width:1060px;margin:0 auto 55px;padding:0 22px}
+    .contact-inner{border-radius:20px;padding:25px 28px;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+    .contact-inner h3{margin:0 0 4px;font-size:20px}
+    .contact-inner p{margin:0;color:#c8d8f0;font-size:13px}
+    .contact-inner .btn{background:#fff;color:var(--navy)}
+    footer{background:#0b1a35;color:#d4def0;padding:25px 5%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;font-size:12px}
+    footer strong{color:#fff}
+    @media(max-width:850px){nav{gap:12px}nav a:not(.nav-cta){display:none}.hero{grid-template-columns:1fr;padding-top:42px}.hero-visual{min-height:290px}.stats{grid-template-columns:1fr}.stat{padding:13px 16px}}
+    @media(max-width:600px){.topbar{justify-content:center;text-align:center}header{padding:13px 5%}.brand-mark{width:42px;height:42px}.brand-name{font-size:13px}.brand-sub{font-size:10px}.nav-cta{padding:9px 11px;font-size:12px}.hero{gap:25px;padding-top:35px}.hero-visual{min-height:270px;padding:23px}.hero-visual h2{font-size:25px}.stats{margin-bottom:34px}.form-banner{padding:18px}.form-banner h3{font-size:17px}form{padding:21px 17px}.fields{grid-template-columns:1fr;gap:14px}.field.full{grid-column:auto}.form-actions{align-items:stretch}.form-actions .btn{width:100%}.contact-inner{padding:22px}.contact-inner .btn{width:100%}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div></div>
+
+  <div class="topbar">
+    <span>📍 Siqarah Public Model High School, Shorkot</span>
+    <span>📞 <a href="tel:+923359439579">0335 9439579</a> &nbsp; | &nbsp; ✉ <a href="mailto:schoolsiqarah@gmail.com">schoolsiqarah@gmail.com</a></span>
+  </div>
+
+  <header>
+    <a class="brand" href="index.html" aria-label="Siqarah School home">
+      <div class="brand-mark">SP</div>
+      <div><div class="brand-name">SIQARAH PUBLIC MODEL</div><div class="brand-sub">HIGH SCHOOL · SHORKOT</div></div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="home .html">Home</a>
+      <a href="#admission-form" class="active">Admissions</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#admission-form">Apply Now ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">ADMISSIONS OPEN · PLAY GROUP TO CLASS 9</div>
+        <h1>Build a bright future with <span>Siqarah School.</span></h1>
+        <p>Give your child a confident start with a supportive learning environment, strong academic foundations, and opportunities to grow. Complete the admission enquiry form and our school team will guide you through the next steps.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#admission-form">Start Application <span>→</span></a>
+          <a class="btn btn-light" href="https://wa.me/923359439579" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-card"><strong>PG – 9th</strong>Classes available</div>
+        <div class="visual-content">
+          <div class="visual-icon">🎓</div>
+          <h2>Every child deserves the chance to shine.</h2>
+          <p>Learn with purpose. Grow with confidence. Prepare for tomorrow.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Admission highlights">
+      <div class="stat"><div class="stat-icon">📚</div><div><strong>Play Group to Class 9</strong><small>Choose your child's class</small></div></div>
+      <div class="stat"><div class="stat-icon">📝</div><div><strong>Simple Enquiry Form</strong><small>Share student and guardian details</small></div></div>
+      <div class="stat"><div class="stat-icon">🤝</div><div><strong>School Guidance</strong><small>Our team can explain next steps</small></div></div>
+    </section>
+
+    <section class="form-section" id="admission-form">
+      <div class="section-heading">
+        <div class="mini">Your next step starts here</div>
+        <h2>Admission Enquiry Form</h2>
+        <p>Please enter accurate details. Fields marked * are required.</p>
+      </div>
+      <div class="form-card">
+        <div class="form-banner">
+          <div><h3>Student Registration</h3><p>Siqarah Public Model High School, Shorkot</p></div>
+          <div class="required-note"><span style="color:#e04f5f">*</span> Required information</div>
+        </div>
+
+        <form id="admissionForm">
+          <fieldset>
+            <legend><span>01</span> Admission Details</legend>
+            <div class="fields">
+              <div class="field">
+                <label for="classApplying">Class applying for <span class="req">*</span></label>
+                <select id="classApplying" name="class_applying" required>
+                  <option value="">Select class</option>
+                  <option>Play Group</option><option>Nursery</option><option>Prep / KG</option>
+                  <option>Class 1</option><option>Class 2</option><option>Class 3</option>
+                  <option>Class 4</option><option>Class 5</option><option>Class 6</option>
+                  <option>Class 7</option><option>Class 8</option><option>Class 9</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="session">Admission session <span class="req">*</span></label>
+                <select id="session" name="session" required>
+                  <option value="">Select session</option><option>2026–2027</option><option>2027–2028</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>02</span> Student Information</legend>
+            <div class="fields">
+              <div class="field"><label for="studentName">Student full name <span class="req">*</span></label><input id="studentName" name="student_name" autocomplete="name" placeholder="Enter student's full name" required></div>
+              <div class="field"><label for="dob">Date of birth <span class="req">*</span></label><input id="dob" name="date_of_birth" type="date" required></div>
+              <div class="field"><label for="gender">Gender <span class="req">*</span></label><select id="gender" name="gender" required><option value="">Select gender</option><option>Male</option><option>Female</option><option>Prefer not to say</option></select></div>
+              <div class="field"><label for="bform">B-Form / Child Registration No. (optional)</label><input id="bform" name="b_form_number" placeholder="Enter only if available"></div>
+              <div class="field"><label for="previousSchool">Previous school (if any)</label><input id="previousSchool" name="previous_school" placeholder="School name or write N/A"></div>
+              <div class="field"><label for="lastClass">Last class passed (if applicable)</label><select id="lastClass" name="last_class_passed"><option value="">Select last class</option><option>Not applicable / New admission</option><option>Play Group</option><option>Nursery</option><option>Prep / KG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option></select></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>03</span> Parent / Guardian Information</legend>
+            <div class="fields">
+              <div class="field"><label for="guardianName">Parent / guardian full name <span class="req">*</span></label><input id="guardianName" name="guardian_name" placeholder="Enter parent or guardian name" required></div>
+              <div class="field"><label for="relationship">Relationship to student <span class="req">*</span></label><select id="relationship" name="guardian_relationship" required><option value="">Select relationship</option><option>Father</option><option>Mother</option><option>Guardian</option></select></div>
+              <div class="field"><label for="phone">Mobile / WhatsApp number <span class="req">*</span></label><input id="phone" name="guardian_phone" type="tel" autocomplete="tel" placeholder="e.g. 03XX XXXXXXX" pattern="[0-9+() -]{10,20}" required><div class="hint">Enter a number the school can contact.</div></div>
+              <div class="field"><label for="email">Email address (optional)</label><input id="email" name="guardian_email" type="email" autocomplete="email" placeholder="name@example.com"></div>
+              <div class="field full"><label for="address">Home address <span class="req">*</span></label><textarea id="address" name="home_address" autocomplete="street-address" placeholder="House / street, village or city" required></textarea></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>04</span> Additional Information</legend>
+            <div class="fields">
+              <div class="field full"><label for="message">Anything else the school should know? (optional)</label><textarea id="message" name="additional_message" placeholder="Write any question or additional information here"></textarea></div>
+            </div>
+          </fieldset>
+
+          <label class="consent" for="consent"><input id="consent" name="consent" type="checkbox" required><span>I confirm that the information provided is accurate to the best of my knowledge and allow the school to contact me regarding this admission enquiry.</span></label>
+          <div class="form-actions">
+            <small>Submitting this form is an admission enquiry, not a confirmation of admission. The school may contact you to discuss documents, availability, and next steps.</small>
+            <button class="btn btn-primary submit-btn" id="submitButton" type="submit">Submit Enquiry <span>→</span></button>
+          </div>
+          <div class="status" id="formStatus" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <div class="contact-inner">
+        <div><h3>Need help with admissions?</h3><p>Contact Siqarah Public Model High School, Shorkot.</p></div>
+        <a class="btn" href="https://wa.me/923359439579" target="_blank" rel="noopener">WhatsApp: 0335 9439579 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Siqarah Public Model High School</strong><br>Shorkot</div>
+    <div>© <span id="year"></span> Siqarah School. All rights reserved.</div>
+  </footer>
+
+  <script>
+    // -------------------------------------------------------------
+    // OPTIONAL BACKEND SETUP:
+    // To save applications online, create a Supabase project, run
+    // the supplied schema.sql, then fill in the two values below.
+    // Never put a service_role key in this HTML file.
+    // -------------------------------------------------------------
+    const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
+    const SUPABASE_ANON_KEY = "YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY";
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const form = document.getElementById("admissionForm");
+    const statusBox = document.getElementById("formStatus");
+    const submitButton = document.getElementById("submitButton");
+
+    function showStatus(message, type) {
+      statusBox.textContent = message;
+      statusBox.className = "status show " + type;
+      statusBox.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    }
+
+    // Prevent selecting a future date of birth.
+    const dob = document.getElementById("dob");
+    dob.max = new Date().toISOString().split("T")[0];
+
+    form.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      if (!form.reportValidity()) return;
+
+      const formData = new FormData(form);
+      const application = Object.fromEntries(formData.entries());
+      application.consent = document.getElementById("consent").checked;
+      application.created_at = new Date().toISOString();
+
+      const backendConfigured =
+        SUPABASE_URL.startsWith("https://") &&
+        !SUPABASE_URL.includes("YOUR_SUPABASE") &&
+        SUPABASE_ANON_KEY &&
+        !SUPABASE_ANON_KEY.includes("YOUR_SUPABASE");
+
+      if (!backendConfigured) {
+        // Demo mode: do not pretend the application was saved.
+        showStatus(
+          "Demo mode: the form works in your browser, but this application has NOT been saved or emailed. To receive real applications, connect your Supabase URL and publishable/anon key in the JavaScript section.",
+          "info"
+        );
+        console.log("Demo admission enquiry (not saved online):", application);
+        return;
+      }
+
+      submitButton.disabled = true;
+      submitButton.textContent = "Submitting…";
+
+      try {
+        const response = await fetch(SUPABASE_URL.replace(/\/$/, "") + "/rest/v1/admission_applications", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "apikey": SUPABASE_ANON_KEY,
+            "Authorization": "Bearer " + SUPABASE_ANON_KEY,
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify(application)
+        });
+
+        if (!response.ok) {
+          const errorText = await response.text();
+          throw new Error(errorText || "The server rejected the submission.");
+        }
+
+        form.reset();
+        showStatus("Thank you! Your admission enquiry was submitted successfully. The school may contact you using the details you provided.", "success");
+      } catch (error) {
+        console.error("Admission form submission error:", error);
+        showStatus("Your enquiry could not be submitted. Please check your internet connection and Supabase setup, or contact the school on WhatsApp 0335 9439579.", "error");
+      } finally {
+        submitButton.disabled = false;
+        submitButton.innerHTML = 'Submit Enquiry <span>→</span>';
+      }
+    });
+  </script>
+</body>
+</html>
+
+  
+</body>
+</html>

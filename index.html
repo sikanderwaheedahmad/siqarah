@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#103e32">
+  <meta name="description" content="Welcome to Siqarah Public Model High School Shorkot. Discover our academics, school activities and educational environment.">
+  <title>Siqarah Public Model High School | Shorkot</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green: #103e32;
+      --green-light: #1b624d;
+      --gold: #e9b957;
+      --cream: #f8f7f1;
+      --white: #ffffff;
+      --text: #20342d;
+      --muted: #6b7a73;
+      --border: #e5e9e3;
+      --shadow: 0 15px 45px rgba(16, 62, 50, 0.09);
+      --radius: 22px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 95px;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background: var(--white);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-soft {
+      background: var(--cream);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--green-light);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      background: var(--gold);
+    }
+
+    .section-heading {
+      font-family: "Playfair Display", serif;
+      color: var(--green);
+      font-size: clamp(30px, 4vw, 45px);
+      line-height: 1.2;
+      margin-bottom: 18px;
+    }
+
+    .section-description {
+      color: var(--muted);
+      max-width: 660px;
+    }
+
+    .section-top {
+      margin-bottom: 42px;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center .section-description {
+      margin: auto;
+    }
+
+    .text-center .eyebrow {
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 23px;
+      border-radius: 9px;
+      border: 1px solid transparent;
+      font-weight: 800;
+      font-size: 14px;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      color: var(--white);
+      background: var(--green);
+    }
+
+    .btn-primary:hover {
+      background: var(--green-light);
+      transform: translateY(-3px);
+    }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #263225;
+    }
+
+    .btn-gold:hover {
+      background: #f3ca79;
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      color: var(--green);
+      border-color: rgba(16, 62, 50, .25);
+      background: rgba(255, 255, 255, .7);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      transform: translateY(-3px);
+    }
+
+    /* Top bar */
+    .topbar {
+      background: var(--green);
+      color: #eaf3ed;
+      font-size: 12px;
+      padding: 9px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a:hover {
+      color: var(--gold);
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(16, 62, 50, .08);
+    }
+
+    .header-inner {
+      min-height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+    }
+
+    .brand-logo {
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      background: #f0f4ec;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      flex-shrink: 0;
+      color: var(--green);
+      font-size: 11px;
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    /* Replace this placeholder with your school logo later */
+    .brand-logo span {
+      padding: 3px;
+    }
+
+    .brand-name {
+      font-family: "Playfair Display", serif;
+      font-size: 17px;
+      line-height: 1.25;
+      font-weight: 800;
+      color: var(--green);
+    }
+
+    .brand-location {
+      color: var(--muted);
+      font-size: 11px;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+    }
+
+    .nav-links a {
+      position: relative;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334b40;
+      white-space: nowrap;
+      padding: 10px 0;
+    }
+
+    .nav-links a:not(.nav-cta)::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 2px;
+      height: 2px;
+      width: 0;
+      background: var(--gold);
+      transition: width .3s ease;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links .nav-cta {
+      padding: 12px 17px;
+      background: var(--green);
+      color: white;
+      border-radius: 8px;
+    }
+
+    .nav-links .nav-cta:hover {
+      background: var(--green-light);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 43px;
+      height: 43px;
+      border: 1px solid var(--border);
+      background: white;
+      border-radius: 9px;
+      color: var(--green);
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 15%, rgba(233,185,87,.19), transparent 27%),
+        linear-gradient(125deg, #f7f8f1 0%, #eef4e9 55%, #fff9eb 100%);
+      padding: 70px 0 78px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border: 1px solid rgba(16, 62, 50, .08);
+      border-radius: 50%;
+      right: -150px;
+      bottom: -230px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      align-items: center;
+      gap: 55px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid #dbe5d5;
+      background: rgba(255,255,255,.72);
+      color: var(--green);
+      border-radius: 50px;
+      padding: 8px 14px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 22px;
+    }
+
+    .hero-badge span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #43a56c;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      color: var(--green);
+      font-size: clamp(40px, 5vw, 64px);
+      line-height: 1.09;
+      letter-spacing: -1.5px;
+      margin-bottom: 23px;
+    }
+
+    .hero h1 em {
+      color: #b77c20;
+      font-style: normal;
+    }
+
+    .hero-description {
+      color: #617168;
+      font-size: 15px;
+      max-width: 535px;
+      margin-bottom: 29px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 35px;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      color: #40594b;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .hero-points span::before {
+      content: "✓";
+      color: #278453;
+      font-weight: 900;
+      margin-right: 7px;
+    }
+
+    .hero-visual {
+      min-height: 440px;
+      position: relative;
+    }
+
+    .hero-image-main {
+      position: absolute;
+      inset: 0 15px 20px 35px;
+      border-radius: 180px 180px 25px 25px;
+      overflow: hidden;
+      background: #dbe7d9;
+      box-shadow: 0 25px 60px rgba(16, 62, 50, .16);
+    }
+
+    .hero-image-main img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-image-main::after {
+      content: "";
+      position: absolute;
+      inset: 45% 0 0;
+      background: linear-gradient(transparent, rgba(10, 37, 28, .6));
+    }
+
+    .hero-image-caption {
+      position: absolute;
+      z-index: 2;
+      left: 65px;
+      bottom: 48px;
+      color: white;
+    }
+
+    .hero-image-caption strong {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+    }
+
+    .hero-image-caption span {
+      font-size: 12px;
+      color: #e7eee7;
+    }
+
+    .floating-card {
+      position: absolute;
+      z-index: 3;
+      background: white;
+      border: 1px solid #edf0e9;
+      box-shadow: var(--shadow);
+      border-radius: 15px;
+      padding: 16px 19px;
+    }
+
+    .floating-card-one {
+      left: 0;
+      top: 65px;
+    }
+
+    .floating-card-two {
+      right: 0;
+      bottom: 0;
+    }
+
+    .floating-card .symbol {
+      color: #a87720;
+      font-size: 21px;
+      font-weight: 900;
+    }
+
+    .floating-card strong {
+      display: block;
+      color: var(--green);
+      font-size: 13px;
+    }
+
+    .floating-card small {
+      color: var(--muted);
+      font-size: 10px;
+    }
+
+    /* Stats */
+    .stats-wrap {
+      position: relative;
+      z-index: 4;
+      margin-top: -25px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 27px 12px;
+      border-right: 1px solid var(--border);
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--green);
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      line-height: 1.2;
+    }
+
+    .stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 7px;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-visual {
+      position: relative;
+      padding: 0 24px 24px 0;
+    }
+
+    .about-image {
+      height: 410px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: #e5ebdf;
+    }
+
+    .about-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-note {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background: var(--green);
+      color: white;
+      width: 190px;
+      padding: 21px;
+      border-radius: 15px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-note strong {
+      display: block;
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 23px;
+    }
+
+    .about-note span {
+      font-size: 11px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+      font-size: 14px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+      margin: 25px 0 28px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    .feature-icon {
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 10px;
+      background: #edf4e9;
+      color: var(--green);
+    }
+
+    /* Academics */
+    .academic-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .academic-card {
+      background: white;
+      border: 1px solid var(--border);
+      padding: 30px;
+      border-radius: var(--radius);
+      transition: .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .academic-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+      border-color: #d2dfce;
+    }
+
+    .academic-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: #edf4e9;
+      display: grid;
+      place-items: center;
+      font-size: 25px;
+      margin-bottom: 22px;
+    }
+
+    .academic-card h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--green);
+      font-size: 22px;
+      margin-bottom: 11px;
+    }
+
+    .academic-card p {
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .card-label {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 6px;
+      background: #fbf3df;
+      color: #86621f;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    /* Learning environment */
+    .environment-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .environment-card {
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: white;
+      border: 1px solid var(--border);
+      transition: .3s ease;
+    }
+
+    .environment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+
+    .environment-image {
+      height: 205px;
+      overflow: hidden;
+      background: #e6ece2;
+    }
+
+    .environment-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+
+    .environment-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .environment-content {
+      padding: 23px;
+    }
+
+    .environment-content h3 {
+      color: var(--green);
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .environment-content p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Principal */
+    .principal-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .principal-photo {
+      min-height: 390px;
+      height: 100%;
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .principal-photo-placeholder {
+      background: #edf2e9;
+      border: 2px dashed #b9c8bb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .photo-placeholder-content {
+      text-align: center;
+      color: var(--green);
+    }
+
+    .photo-placeholder-content .plus {
+      width: 70px;
+      height: 70px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 15px;
+      border: 1px solid #b9c8bb;
+      border-radius: 50%;
+      font-size: 38px;
+      font-weight: 400;
+    }
+
+    .photo-placeholder-content p {
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .photo-placeholder-content small {
+      color: var(--muted);
+    }
+
+    .principal-content blockquote {
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+      color: #5e7065;
+      font-size: 16px;
+      font-style: italic;
+      margin: 20px 0 25px;
+    }
+
+    .principal-content > p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .principal-signature {
+      border-top: 1px solid var(--border);
+      padding-top: 18px;
+      margin-top: 24px;
+    }
+
+    .principal-signature strong {
+      display: block;
+      color: var(--green);
+      font-size: 17px;
+    }
+
+    .principal-signature span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* Notices */
+    .notice-layout {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 35px;
+    }
+
+    .notice-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .notice-item {
+      display: flex;
+      gap: 17px;
+      align-items: flex-start;
+      background: white;
+      border: 1px solid var(--border);
+      padding: 19px;
+      border-radius: 14px;
+    }
+
+    .notice-date {
+      width: 60px;
+      min-width: 60px;
+      text-align: center;
+      background: #edf4e9;
+      color: var(--green);
+      padding: 9px 5px;
+      border-radius: 9px;
+      font-size: 10px;
+      font-weight: 800;
+    }
+
+    .notice-date span {
+      display: block;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .notice-item h3 {
+      color: var(--green);
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .notice-item p {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .notice-side {
+      background: var(--green);
+      color: white;
+      padding: 32px;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .notice-side .side-icon {
+      font-size: 36px;
+      margin-bottom: 18px;
+    }
+
+    .notice-side h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 29px;
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+
+    .notice-side p {
+      color: #d4e3d8;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr .85fr;
+      grid-template-rows: 190px 190px;
+      gap: 14px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      background: #e6ece2;
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .gallery-caption {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 30px 17px 16px;
+      background: linear-gradient(transparent, rgba(9, 34, 25, .78));
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* Admissions CTA */
+    .admissions-banner {
+      background:
+        radial-gradient(circle at 90% 10%, rgba(233,185,87,.22), transparent 28%),
+        var(--green);
+      color: white;
+      padding: 55px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      overflow: hidden;
+    }
+
+    .admissions-banner h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(29px, 4vw, 43px);
+      line-height: 1.2;
+      margin-bottom: 13px;
+    }
+
+    .admissions-banner p {
+      color: #d9e7dd;
+      max-width: 590px;
+      font-size: 13px;
+    }
+
+    .admissions-banner .btn {
+      flex-shrink: 0;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 45px;
+    }
+
+    .contact-info-card {
+      background: var(--green);
+      color: white;
+      border-radius: var(--radius);
+      padding: 33px;
+    }
+
+    .contact-info-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .contact-info-card > p {
+      color: #d5e3d9;
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 13px;
+      align-items: flex-start;
+      margin-bottom: 23px;
+    }
+
+    .contact-detail-icon {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      min-width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,.1);
+      border-radius: 10px;
+      color: var(--gold);
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 3px;
+    }
+
+    .contact-detail span,
+    .contact-detail a {
+      color: #d5e3d9;
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-detail a:hover {
+      color: var(--gold);
+    }
+
+    .contact-form-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      background: white;
+    }
+
+    .contact-form-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 26px;
+      color: var(--green);
+      margin-bottom: 8px;
+    }
+
+    .contact-form-card > p {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    .form-group label {
+      font-size: 12px;
+      color: var(--green);
+      font-weight: 800;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      border: 1px solid #dfe6dd;
+      border-radius: 9px;
+      background: #fcfdfb;
+      color: var(--text);
+      padding: 12px 13px;
+      outline: none;
+      font-size: 13px;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: #719d7c;
+      box-shadow: 0 0 0 3px rgba(113,157,124,.12);
+    }
+
+    .form-group textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .form-note {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 12px;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #0a2d24;
+      color: #d6e3da;
+      padding: 65px 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr 1fr;
+      gap: 50px;
+      padding-bottom: 45px;
+    }
+
+    .footer-brand {
+      color: white;
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      line-height: 1.35;
+      margin-bottom: 15px;
+    }
+
+    .footer-about {
+      color: #b7cbbd;
+      font-size: 12px;
+      max-width: 340px;
+    }
+
+    .footer-heading {
+      color: white;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .footer-links {
+      display: grid;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #b7cbbd;
+      font-size: 12px;
+      width: fit-content;
+      transition: .2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+      transform: translateX(3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: #a9c0b1;
+      font-size: 11px;
+    }
+
+    /* WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      z-index: 900;
+      right: 22px;
+      bottom: 22px;
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #20bd67;
+      color: white;
+      box-shadow: 0 8px 25px rgba(0,0,0,.18);
+      font-size: 27px;
+      transition: .25s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: translateY(-4px) scale(1.04);
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .moving-line {
+      height: 3px;
+      background: linear-gradient(90deg, var(--green), var(--gold), #8eb99a, var(--green));
+      background-size: 300% 100%;
+      animation: moveLine 5s linear infinite;
+    }
+
+    @keyframes moveLine {
+      from { background-position: 0% 50%; }
+      to { background-position: 300% 50%; }
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .about-grid,
+      .principal-grid {
+        gap: 35px;
+      }
+    }
+
+    @media (max-width: 820px) {
+      .section {
+        padding: 68px 0;
+      }
+
+      .header-inner {
+        min-height: 75px;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        box-shadow: var(--shadow);
+        padding: 15px 22px 22px;
+        align-items: stretch;
+        gap: 3px;
+      }
+
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav-links a {
+        padding: 11px 5px;
+        font-size: 14px;
+      }
+
+      .nav-links .nav-cta {
+        text-align: center;
+        margin-top: 7px;
+      }
+
+      .hero {
+        padding: 55px 0 60px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .principal-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 400px;
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      .hero-image-main {
+        inset: 0 15px 18px 25px;
+      }
+
+      .hero-image-caption {
+        left: 48px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat:nth-child(2) {
+        border-right: 0;
+      }
+
+      .stat:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .academic-grid,
+      .environment-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .principal-photo {
+        min-height: 330px;
+      }
+
+      .notice-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .notice-side {
+        min-height: 260px;
+      }
+
+      .admissions-banner {
+        padding: 35px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .container {
+        width: min(100% - 30px, 1160px);
+      }
+
+      .topbar-inner {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-info {
+        justify-content: center;
+        gap: 9px 15px;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .brand-logo {
+        width: 45px;
+        height: 45px;
+        font-size: 9px;
+      }
+
+      .brand-name {
+        font-size: 12px;
+        max-width: 210px;
+      }
+
+      .brand-location {
+        font-size: 10px;
+      }
+
+      .hero h1 {
+        font-size: 41px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+      }
+
+      .hero-visual {
+        min-height: 325px;
+      }
+
+      .hero-image-main {
+        inset: 0 7px 17px 17px;
+        border-radius: 130px 130px 20px 20px;
+      }
+
+      .hero-image-caption {
+        left: 35px;
+        bottom: 40px;
+      }
+
+      .hero-image-caption strong {
+        font-size: 18px;
+      }
+
+      .floating-card {
+        padding: 10px 12px;
+      }
+
+      .floating-card-one {
+        top: 40px;
+      }
+
+      .floating-card strong {
+        font-size: 11px;
+      }
+
+      .floating-card small {
+        font-size: 9px;
+      }
+
+      .stat {
+        padding: 21px 8px;
+      }
+
+      .stat strong {
+        font-size: 25px;
+      }
+
+      .stat span {
+        font-size: 10px;
+      }
+
+      .about-image {
+        height: 300px;
+      }
+
+      .feature-list,
+      .academic-grid,
+      .environment-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .academic-card {
+        padding: 25px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 150px 150px;
+      }
+
+      .gallery-item:first-child {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
+
+      .admissions-banner {
+        padding: 28px 23px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .contact-info-card,
+      .contact-form-card {
+        padding: 24px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .footer-grid > div:first-child {
+        grid-column: auto;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .whatsapp-float {
+        right: 15px;
+        bottom: 15px;
+        width: 51px;
+        height: 51px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div>Welcome to Siqarah Public Model High School</div>
+      <div class="topbar-info">
+        <a href="tel:+923359439579">☎ 0335 9439579</a>
+        <a href="mailto:schoolsiqarah@gmail.com">✉ schoolsiqarah@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="Siqarah School Home">
+        <div class="brand-logo">
+          <span>SIQARAH<br>SCHOOL</span>
+        </div>
+        <div>
+          <div class="brand-name">Siqarah Public<br>Model High School</div>
+          <div class="brand-location">Shorkot, Pakistan</div>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        type="button" aria-label="Open navigation menu"
+        aria-expanded="false" aria-controls="navLinks">☰</button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+       <a href="admissions.html">admisssions</a>
+        <a href="#contact">Contact Us</a>
+        <a href="admissions.html">Apply for Admission ↗</a>
+      </nav>
+
+    </div>
+    <div class="moving-line"></div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span></span>
+            LEARNING TODAY, LEADING TOMORROW
+          </div>
+
+          <h1>Building Bright Futures Through <em>Education.</em></h1>
+
+          <p class="hero-description">
+            Welcome to Siqarah Public Model High School, Shorkot.
+            We believe that every child deserves an encouraging learning
+            environment where knowledge, confidence, character and
+            creativity can grow together.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary coming-soon">
+              Explore Admissions <span>↗</span>
+            </a>
+            <a href="#about" class="btn btn-outline">
+              Discover Our School →
+            </a>
+          </div>
+
+          <div class="hero-points">
+            <span>Student-Focused Learning</span>
+            <span>Character Building</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-main">
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1100&q=85"
+              alt="Students learning together in a classroom"
+              fetchpriority="high">
+          </div>
+
+          <div class="hero-image-caption">
+            <strong>A Place to Learn & Grow</strong>
+            <span>Knowledge · Values · Confidence</span>
+          </div>
+
+          <div class="floating-card floating-card-one">
+            <div class="symbol">✦</div>
+            <strong>Learning With Purpose</strong>
+            <small>Building a better tomorrow</small>
+          </div>
+
+          <div class="floating-card floating-card-two">
+            <div class="symbol">✓</div>
+            <strong>Every Child Matters</strong>
+            <small>Encouragement for every learner</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <div class="container stats-wrap">
+      <div class="stats-grid reveal">
+        <div class="stat">
+          <strong>Learning</strong>
+          <span>A Supportive Environment</span>
+        </div>
+        <div class="stat">
+          <strong>Growth</strong>
+          <span>Skills and Confidence</span>
+        </div>
+        <div class="stat">
+          <strong>Values</strong>
+          <span>Respect and Responsibility</span>
+        </div>
+        <div class="stat">
+          <strong>Future</strong>
+          <span>Preparing Young Minds</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=85"
+              alt="Students engaged in learning">
+          </div>
+          <div class="about-note">
+            <strong>Our Mission</strong>
+            <span>Help every learner build knowledge, confidence and character.</span>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <div class="eyebrow">About Our School</div>
+          <h2 class="section-heading">Education That Inspires Excellence</h2>
+
+          <p>
+            Siqarah Public Model High School, Shorkot, is committed to
+            supporting students on their educational journey. Our aim is
+            to make learning meaningful, encourage curiosity and help
+            students develop the skills they need for the future.
+          </p>
+
+          <p>
+            We value education, discipline, respect, personal responsibility
+            and a positive relationship between students, teachers and parents.
+            We want every student to feel encouraged to learn and improve.
+          </p>
+
+          <div class="feature-list">
+            <div class="feature-item">
+              <span class="feature-icon">✦</span>
+              Quality-Focused Learning
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">◎</span>
+              Character Development
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">⌂</span>
+              Supportive Environment
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">↗</span>
+              Future-Ready Skills
+            </div>
+          </div>
+
+          <a href="#principal" class="btn btn-primary">Meet Our Principal →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACADEMICS PREVIEW -->
+    <section class="section section-soft" id="academics">
+      <div class="container">
+
+        <div class="section-top text-center reveal">
+          <div class="eyebrow">Our Academics</div>
+          <h2 class="section-heading">A Strong Foundation for Every Stage</h2>
+          <p class="section-description">
+            Learning is a journey. We aim to help students build strong
+            foundations, develop independent thinking and prepare for the
+            next stage of their education.
+          </p>
+        </div>
+
+        <div class="academic-grid">
+
+          <article class="academic-card reveal">
+            <div class="academic-icon">📚</div>
+            <h3>Early Learning</h3>
+            <p>
+              Encourage curiosity, language development, basic numeracy,
+              creativity and positive learning habits in young learners.
+            </p>
+            <span class="card-label">FOUNDATION STAGE</span>
+          </article>
+
+          <article class="academic-card reveal">
+            <div class="academic-icon">✏️</div>
+            <h3>Primary Education</h3>
+            <p>
+              Build essential skills in reading, writing, mathematics,
+              general knowledge and classroom participation.
+            </p>
+            <span class="card-label">CORE LEARNING</span>
+          </article>
+
+          <article class="academic-card reveal">
+            <div class="academic-icon">🎓</div>
+            <h3>Middle & Secondary</h3>
+            <p>
+              Support deeper subject knowledge, critical thinking,
+              independent study and preparation for future examinations.
+            </p>
+            <span class="card-label">ACADEMIC GROWTH</span>
+          </article>
+
+        </div>
+
+        <div class="text-center" style="margin-top:32px">
+          <a href="#" class="btn btn-outline coming-soon">
+            View Academic Details →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LEARNING ENVIRONMENT -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-top text-center reveal">
+          <div class="eyebrow">Learning Beyond Books</div>
+          <h2 class="section-heading">A Place to Discover and Develop</h2>
+          <p class="section-description">
+            A positive educational experience includes knowledge,
+            participation, creativity and the confidence to ask questions.
+          </p>
+        </div>
+
+        <div class="environment-grid">
+
+          <article class="environment-card reveal">
+            <div class="environment-image">
+              <img
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+                alt="Classroom learning">
+            </div>
+            <div class="environment-content">
+              <h3>Classroom Learning</h3>
+              <p>
+                Encourage understanding, questions and active participation
+                in daily lessons.
+              </p>
+            </div>
+          </article>
+
+          <article class="environment-card reveal">
+            <div class="environment-image">
+              <img
+                src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
+                alt="Students studying together">
+            </div>
+            <div class="environment-content">
+              <h3>Teamwork & Cooperation</h3>
+              <p>
+                Help students practise cooperation, communication and
+                respect for others.
+              </p>
+            </div>
+          </article>
+
+          <article class="environment-card reveal">
+            <div class="environment-image">
+              <img
+                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=800&q=80"
+                alt="Young student learning">
+            </div>
+            <div class="environment-content">
+              <h3>Confidence & Creativity</h3>
+              <p>
+                Support curiosity, creative thinking and the confidence
+                to explore new ideas.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPAL MESSAGE -->
+    <section class="section section-soft" id="principal">
+      <div class="container principal-grid">
+
+        <div class="principal-content reveal">
+          <div class="eyebrow">Principal's Message</div>
+          <h2 class="section-heading">Every Child Has the Potential to Shine</h2>
+
+          <blockquote>
+            “Education is not only about acquiring knowledge; it is also
+            about developing character, responsibility and the confidence
+            to face tomorrow.”
+          </blockquote>
+
+          <p>
+            At Siqarah Public Model High School, we believe that a student's
+            progress grows through consistent effort, encouragement and
+            cooperation between school and family. Our goal is to provide
+            an environment where learners are motivated to improve, discover
+            their abilities and work towards a brighter future.
+          </p>
+
+          <div class="principal-signature">
+            <strong>Dr. Saeed Ahmad</strong>
+            <span>Principal · Siqarah Public Model High School</span>
+          </div>
+        </div>
+
+        <div class="principal-photo reveal">
+          <img
+            src="saeed ahmad.jpg"
+            alt="Dr. Saeed Ahmad - Principal of Siqarah Public Model High School"
+            style="width:100%; height:390px; object-fit:cover;">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NOTICES -->
+    <section class="section" id="notices">
+      <div class="container">
+
+        <div class="section-top reveal">
+          <div class="eyebrow">School Updates</div>
+          <h2 class="section-heading">News & Announcements</h2>
+          <p class="section-description">
+            Keep connected with school updates and important announcements.
+          </p>
+        </div>
+
+        <div class="notice-layout">
+
+          <div class="notice-list">
+
+            <article class="notice-item reveal">
+              <div class="notice-date">
+                <span>01</span>
+                UPDATE
+              </div>
+              <div>
+                <h3>Welcome to Our School Website</h3>
+                <p>
+                  Explore information about our school, learning approach
+                  and contact details.
+                </p>
+              </div>
+            </article>
+
+            <article class="notice-item reveal">
+              <div class="notice-date">
+                <span>02</span>
+                UPDATE
+              </div>
+              <div>
+                <h3>Admissions Information</h3>
+                <p>
+                  Contact the school directly for current admission
+                  availability, requirements and procedures.
+                </p>
+              </div>
+            </article>
+
+            <article class="notice-item reveal">
+              <div class="notice-date">
+                <span>03</span>
+                UPDATE
+              </div>
+              <div>
+                <h3>Stay Connected With School</h3>
+                <p>
+                  Parents can contact the school for verified information
+                  about academic activities and school announcements.
+                </p>
+              </div>
+            </article>
+
+          </div>
+
+          <aside class="notice-side reveal">
+            <div class="side-icon">✦</div>
+            <h3>Have a Question About Our School?</h3>
+            <p>
+              Contact us for information about admissions, classes,
+              school policies and other enquiries.
+            </p>
+            <a href="#contact" class="btn btn-gold">Contact the School →</a>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY PREVIEW -->
+    <section class="section section-soft" id="gallery">
+      <div class="container">
+
+        <div class="section-top text-center reveal">
+          <div class="eyebrow">School Gallery</div>
+          <h2 class="section-heading">Moments of Learning and Growth</h2>
+          <p class="section-description">
+            A preview of school life. Actual school photographs and videos
+            can be added here when the school gallery is connected to the
+            future admin panel.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <a href="#" class="gallery-item coming-soon reveal"
+             aria-label="School learning gallery coming soon">
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80"
+              alt="Students in a learning environment">
+            <span class="gallery-caption">Learning Together</span>
+          </a>
+
+          <a href="#" class="gallery-item coming-soon reveal"
+             aria-label="School activities gallery coming soon">
+            <img
+              src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80"
+              alt="Students working together">
+            <span class="gallery-caption">Student Activities</span>
+          </a>
+
+          <a href="#" class="gallery-item coming-soon reveal"
+             aria-label="Student learning gallery coming soon">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=700&q=80"
+              alt="Student learning">
+            <span class="gallery-caption">Learning & Discovery</span>
+          </a>
+
+          <a href="#" class="gallery-item coming-soon reveal"
+             aria-label="Education gallery coming soon">
+            <img
+              src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=700&q=80"
+              alt="Young learner">
+            <span class="gallery-caption">Young Learners</span>
+          </a>
+
+          <a href="#" class="gallery-item coming-soon reveal"
+             aria-label="Classroom gallery coming soon">
+            <img
+              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=80"
+              alt="School classroom">
+            <span class="gallery-caption">Our Learning Spaces</span>
+          </a>
+
+        </div>
+
+        <div class="text-center" style="margin-top:30px">
+          <a href="#" class="btn btn-primary coming-soon">
+            Explore Full Gallery →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADMISSIONS CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="admissions-banner reveal">
+
+          <div>
+            <div class="eyebrow" style="color:var(--gold)">
+              Your Child's Journey Starts Here
+            </div>
+            <h2>Give Your Child a Strong Start</h2>
+            <p>
+              Get in touch with Siqarah Public Model High School to ask
+              about admission procedures, available classes and the
+              information required for enrolment.
+            </p>
+          </div>
+
+          <a href="#" class="btn btn-gold coming-soon">
+            Admission Details ↗
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-soft" id="contact">
+      <div class="container">
+
+        <div class="section-top reveal">
+          <div class="eyebrow">Get in Touch</div>
+          <h2 class="section-heading">Contact Our School</h2>
+          <p class="section-description">
+            Have a question? Contact us about admissions, classes or
+            general school information.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <div class="contact-info-card reveal">
+            <h3>Let's Connect</h3>
+            <p>
+              We welcome enquiries from parents, students and members
+              of our community.
+            </p>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">⌖</div>
+              <div>
+                <strong>School Location</strong>
+                <span>Shorkot, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">☎</div>
+              <div>
+                <strong>Phone / WhatsApp</strong>
+                <a href="https://wa.me/923359439579" target="_blank"
+                   rel="noopener noreferrer">0335 9439579</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉</div>
+              <div>
+                <strong>Email Address</strong>
+                <a href="mailto:schoolsiqarah@gmail.com">
+                  schoolsiqarah@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">◷</div>
+              <div>
+                <strong>School Office</strong>
+                <span>Please contact us to confirm office hours.</span>
+              </div>
+            </div>
+
+            <a href="https://wa.me/923359439579"
+               class="btn btn-gold"
+               target="_blank" rel="noopener noreferrer">
+              Message on WhatsApp ↗
+            </a>
+          </div>
+
+          <div class="contact-form-card reveal">
+            <h3>Send an Enquiry</h3>
+            <p>
+              Complete the form below to prepare an enquiry email.
+              This form does not yet save submissions to a database.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-grid">
+
+                <div class="form-group">
+                  <label for="parentName">Your Name</label>
+                  <input id="parentName" name="name" type="text"
+                    placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input id="phone" name="phone" type="tel"
+                    placeholder="Enter your phone" required>
+                </div>
+
+                <div class="form-group full">
+                  <label for="email">Email Address (Optional)</label>
+                  <input id="email" name="email" type="email"
+                    placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group full">
+                  <label for="subject">Enquiry Type</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select an enquiry type</option>
+                    <option>Admission Information</option>
+                    <option>Classes and Academics</option>
+                    <option>School Information</option>
+                    <option>Other Enquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group full">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message"
+                    placeholder="Write your question here..." required></textarea>
+                </div>
+
+                <div class="form-group full">
+                  <button class="btn btn-primary" type="submit">
+                    Prepare Enquiry Email →
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+            <p class="form-note">
+              Note: The live database and admin dashboard will be added
+              in a later development step.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand">
+            Siqarah Public Model<br>High School, Shorkot
+          </div>
+          <p class="footer-about">
+            Helping students build knowledge, confidence, responsibility
+            and the skills to work towards a brighter future.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Quick Links</h3>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#" class="coming-soon">Academics</a>
+            <a href="#" class="coming-soon">Admissions</a>
+            <a href="#" class="coming-soon">Gallery</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contact Information</h3>
+          <div class="footer-links">
+            <a href="tel:+923359439579">☎ 0335 9439579</a>
+            <a href="mailto:schoolsiqarah@gmail.com">
+              ✉ schoolsiqarah@gmail.com
+            </a>
+            <a href="https://wa.me/923359439579"
+               target="_blank" rel="noopener noreferrer">
+              WhatsApp School
+            </a>
+            <a href="#contact">Shorkot, Pakistan</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Siqarah Public Model High School.</span>
+        <span>Education • Character • Future</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a class="whatsapp-float"
+     href="https://wa.me/923359439579"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Contact school on WhatsApp"
+     title="Chat on WhatsApp">☏</a>
+
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    // Close mobile menu when a real section link is clicked
+    navLinks.querySelectorAll('a[href^="#"]:not(.coming-soon)')
+      .forEach(function (link) {
+        link.addEventListener("click", function () {
+          navLinks.classList.remove("open");
+          menuToggle.setAttribute("aria-expanded", "false");
+          menuToggle.setAttribute("aria-label", "Open navigation menu");
+          menuToggle.textContent = "☰";
+        });
+      });
+
+    // Pages that will be created later should not jump to the top
+    document.querySelectorAll(".coming-soon").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+      });
+    });
+
+    // Reveal sections on scroll
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add("visible");
+      });
+    }
+
+    // Current year in footer
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    // Contact form: opens the user's email app.
+    // This is not a database submission.
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById("parentName").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !phone || !subject || !message) {
+        alert("Please complete all required fields.");
+        return;
+      }
+
+      const emailSubject = encodeURIComponent(
+        "School Enquiry: " + subject
+      );
+
+      const emailBody = encodeURIComponent(
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Email: " + (email || "Not provided") + "\n" +
+        "Enquiry Type: " + subject + "\n\n" +
+        "Message:\n" + message
+      );
+
+      window.location.href =
+        "mailto:schoolsiqarah@gmail.com?subject=" +
+        emailSubject + "&body=" + emailBody;
+    });
+  </script>
+
+</body>
+</html>
+
+</body>
+</html>
+    
+</body>
+</html>
